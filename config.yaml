@@ -161,9 +161,9 @@ setup_commands:
     - python3 -c "from cupy.cuda import nccl"
     - pip3 install alpa
     - pip3 install jaxlib==0.3.22+cuda111.cudnn805 -f https://alpa-projects.github.io/wheels.html
-    - pip3 install jaxlib==0.3.22
     - pip3 install "transformers<=4.23.1" fastapi uvicorn omegaconf jinja2
     - git clone https://github.com/alpa-projects/alpa.git
+    - git clone https://github.com/pushkarraj/LLMs_Inference.git
     # Note: if you're developing Ray, you probably want to create a Docker image that
     # has your Ray repo pre-cloned. Then, you can replace the pip installs
     # below with a git checkout <your_sha> (and possibly a recompile).
